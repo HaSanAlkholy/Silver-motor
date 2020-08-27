@@ -39,6 +39,36 @@ $(window).on('load', function () {
             $('#nava .slide').addClass('dropdown').removeClass('slide');
         }
 
+        if (window.innerWidth < 576) {
+            //clients swiper initialize
+            $('.mob-swiper-containe').addClass('swiper-container');
+            $('.mob-swiper-wrap').removeClass('row');
+            $('.mob-swiper-wrap').addClass('swiper-wrapper');
+            $('.client').addClass('swiper-slide');
+
+            window.mySwiper = new Swiper('.swiper-container', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                updateOnWindowResize: true,
+                slidesPerView: 3,
+                spaceBetween: 10,
+                autoplay: {
+                  delay: 5000,
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 5,
+                      },
+                    150: {
+                      slidesPerView: 2,
+                    }
+                  },
+              });
+
+            //clients swiper initialize end
+
+        }
     }
     resized();
 

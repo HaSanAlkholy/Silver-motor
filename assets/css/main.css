@@ -521,6 +521,12 @@ nav .nav-content .nava-icon .custom-btn {
   }
 }
 
+@media (max-width: 576px) {
+  nav .nav-content .nava-icon .custom-btn {
+    padding: 0.8rem 1.4rem;
+  }
+}
+
 @media (max-width: 1200px) {
   nav .nav-content .nava-icon {
     display: block;
@@ -1058,6 +1064,21 @@ section {
   text-align: center;
 }
 
+#clients .swiper-container {
+  width: 100%;
+  height: auto;
+}
+
+#clients .swiper-container .swiper-slide img {
+  width: auto;
+  height: auto;
+  transition: all 0.5s;
+}
+
+#clients .swiper-container .swiper-slide:hover img {
+  transform: scale(1.05);
+}
+
 #clients .clients-head {
   margin-bottom: 70px;
 }
@@ -1072,8 +1093,21 @@ section {
   align-items: center;
 }
 
+@media (max-width: 576px) {
+  #clients .clients-body {
+    justify-content: unset;
+    align-items: unset;
+  }
+}
+
 #clients .clients-body .client {
   margin: 0 35px;
+}
+
+@media (max-width: 576px) {
+  #clients .clients-body .client {
+    margin: unset;
+  }
 }
 
 #clients .clients-body .client img {
@@ -1084,6 +1118,12 @@ section {
 @media (max-width: 992px) {
   #clients .clients-body .client img {
     margin: 25px 0;
+  }
+}
+
+@media (max-width: 576px) {
+  #clients .clients-body .client img {
+    max-width: 100%;
   }
 }
 
