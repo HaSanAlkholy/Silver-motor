@@ -1,0 +1,116 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  background-color: white;
+  font-family: FrutigerRoman;
+  font-size: 17px;
+}
+
+@font-face {
+  font-family: "FrutigerBlack";
+  src: url("../fonts/frutiger/FrutigerLTArabic-75Black.woff2") format("woff2"), url("../fonts/frutiger/FrutigerLTArabic-75Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FrutigerBold";
+  src: url("../fonts/frutiger/FrutigerLTArabic-65Bold.woff2") format("woff2"), url("../fonts/frutiger/FrutigerLTArabic-65Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FrutigerRoman";
+  src: url("../fonts/frutiger/FrutigerLTArabic-55Roman.woff2") format("woff2"), url("../fonts/frutiger/FrutigerLTArabic-55Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "FrutigerLight";
+  src: url("../fonts/frutiger/FrutigerLTArabic-45Light.woff2") format("woff2"), url("../fonts/frutiger/FrutigerLTArabic-45Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+h1, h2, h3 {
+  font-family: FrutigerBlack;
+  font-size: 36px;
+}
+
+h4 {
+  font-family: FrutigerBold;
+  font-size: 20px;
+}
+
+h5, p {
+  font-family: FrutigerLight;
+  font-size: 19px;
+}
+
+a {
+  color: black;
+}
+a:hover {
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.container {
+  position: relative;
+  padding: 0;
+}
+@media (min-width: 1500px) {
+  .container {
+    max-width: 1920px;
+  }
+}
+
+.col-xs-6 {
+  width: auto;
+}
+@media (min-width: 576px) {
+  .col-xs-6 {
+    width: 50%;
+  }
+}
+
+.ml-auto {
+  margin-left: auto !important;
+}
+
+.mr-auto {
+  margin-right: auto !important;
+}
+
+.mx-auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}

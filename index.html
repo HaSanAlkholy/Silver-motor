@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سيلفر موتور</title>
+    <link rel="shortcut icon" href="./assets/img/favicon.png" />
+    <link rel="stylesheet" href="./assets/css/vendor/all.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/bootstrap-rtl.min.css">
+    <link rel="stylesheet" href="./assets/css/vendor/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="containee">
+            <div class="row nav-content">
+                <div class="nava" id="nava">
+                    <ul>
+                        <div class="nava-head">
+                            <div class="nava-lang">
+                                <a href="./index-en.html"> English <img src="./assets/img/icons/en.png" alt="en"> </a>
+                            </div>
+                            <div class="close mr-auto" onclick="$('#nava').removeClass('nava-active');">
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </div>
+                        <li><a href="#">الرئيسية</a></li>
+                        <li><a href="#">من نحن</a></li>
+                        <li class="dropdown">
+                            <a> المصاعد<i class="fas fa-angle-down"></i></a>
+                            <div class="dropdown-content">
+                                <div><a href="#">مصعد 1</a></div>
+                                <div><a href="#">مصعد 2</a></div>
+                                <div><a href="#">مصعد 3</a></div>
+                                <div><a href="#">مصعد 4</a></div>
+                            </div>
+                        </li>
+                        <li><a href="#">خدماتنا</a></li>
+                        <li><a href="#">مشروعاتنا</a></li>
+                        <li><a href="#">عملاؤنا</a></li>
+                        <li class="nava-info"><a href="#">اتصل بنا</a></li>
+                        <li class="nava-info"><a href="mailto:info@silver-motor.com">info@silver-motor.com<i
+                                    class="fas fa-envelope"></i></a></li>
+                        <li class="nava-info"><a href="tel:920033407">920033407<i class="fas fa-phone-alt"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="nava-icon" id="nava-icon">
+                    <div class="custom-btn white-btn">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <div class="logo">
+                    <a href="#">
+                        <img src="./assets/img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <div class="info">
+                    <div class="mail">info@silver-motor.com<i class="fas fa-envelope"></i></div>
+                    <div class="tel">920033407<i class="fas fa-phone-alt"></i></div>
+                    <div class="contact">
+                        <a href="#" class="contact-btn custom-btn transparent-btn">تواصل معنا</a>
+                        <a class="search-btn custom-btn transparent-btn" onclick="$('#search-form').toggleClass('search-form-active');
+                        ">
+                            <i class="fas fa-search"></i>
+                        </a>
+                    </div>
+                    <div class="lang"> <a href="./index-en.html"> English <img src="./assets/img/icons/en.png" alt="en">
+                        </a></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="search-form" id="search-form">
+        <div class="close-search" onclick="$('#search-form').removeClass('search-form-active');"><i
+                class="fas fa-times"></i></div>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="عن ماذا تبحث؟" autocomplete="false">
+            <div class="searching"><i class="fas fa-search"></i></div>
+        </div>
+    </div>
+
+    <header>
+        <div class="containee">
+            <div class="row">
+                <div class="col-md-12 col-lg-6 header-head flex-center">
+                    <div class="head">
+                        <h1>هدفنا الأساسي خدمة العملاء <br>
+                            وتلبية احتياجاتهم باعلى المواصفات <br>
+                            وأحدث التقنيات وأقل التكاليف</h1>
+                        <p>تأسست شركة المحرك الفضي للمصاعد بالمملكة العربية السعودية عام 2019 بمدينة جدة <br> وهي شركة
+                            ضمن
+                            مجموعة من الشركات تاسست عام 1999 في المملكة ، وبدأت منذ ذلك <br> الحين في مجال تركيب و صيانة
+                            المصاعد</p>
+                        <div class="header-btn">
+                            <a href="#" class="custom-btn white-btn">تعرف علينا اكثر </a>
+                            <a href="#" class="custom-btn black-btn">شاهد مشروعاتنا</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-lg-6 header-img">
+                    <div class="header-shadow"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+
+    <section id="services">
+        <div class="containee">
+            <div class="services-head">
+                <h5>
+                    ماذا يمكننا ان نقدم؟
+                </h5>
+                <h2>
+                    نوفر الخدمات الكاملة لجميع انواع المصاعد
+                </h2>
+            </div>
+            <div class="services-body">
+                <div class="service">
+                    <img src="./assets/img/services/4.png" alt="service">
+                    <h4>خدمات التركيب و التشغيل</h4>
+                </div>
+                <div class="service">
+                    <img src="./assets/img/services/3.png" alt="service">
+                    <h4>خدمات ما بعد البيع</h4>
+                </div>
+                <div class="service">
+                    <img src="./assets/img/services/2.png" alt="service">
+                    <h4>خدمات التطوير و التجديد</h4>
+                </div>
+                <div class="service">
+                    <img src="./assets/img/services/1.png" alt="service">
+                    <h4>توفير قطع غيار المصاعد</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="containee">
+            <div class="row about-item">
+                <div class="col-md-6 about-body">
+                    <h4>المصاعد المنزلية</h4>
+                    <h3>البساطة والجودة والابتكار</h3>
+                    <p>نوفر مصاعد ذات جوده عاليه و تتميز باشكالها الجذابة ذات انسيابية في الاستخدام ، كما تمتاز هذه
+                        المصاعد بعدم احتياجها لأي اعمال تحضيريه من غرفة الماكينة او حفر بئر و غيرها فنحن الوكيل الوكيل
+                        المعتمد الى الشركة الإيطالية igv المختصة باستيراد و تركيب المصاعد المنزلية</p>
+                    <div class="about-btn"><a href="#" class="custom-btn white-btn">قرا المزيد</a>
+                    </div>
+                </div>
+                <div class="col-md-6 about-img"><img src="./assets/img/about/1.png" alt=".."></div>
+            </div>
+            <div class="row about-item">
+                <div class="col-md-6 about-body">
+                    <h4>المصاعد الاوتوماتيكية</h4>
+                    <h3>الفخامة والأمان والسهولة</h3>
+                    <p>تتميز المصاعد الأتوماتيكية بالفخامة والامان والسهولة فى الاستخدام من قبل جميع الفئات العمرية وذوى
+                        الاحتياجات الخاصة، تقديم خيارات متعددة من تصميم الكبينة و لون وشكل الاستانلس ستيل للابواب
+                        الخارجية والداخلية مع امكانية تركيب اكثر من مصعد فى نفس البئر حسب مساحة البئر
+                    </p>
+                    <div class="about-btn"><a href="#" class="custom-btn white-btn">اقرأ المزيد</a></div>
+                </div>
+                <div class="col-md-6 about-img"><img src="./assets/img/about/2.png" alt=".."></div>
+            </div>
+            <div class="row about-item">
+                <div class="col-md-6 about-body">
+                    <h4>مصاعد البضائع</h4>
+                    <h3>رفع كميات كبيرة من البضاعة</h3>
+                    <p>تستخدم مصاعد البضائع في المستودعات والشركات الكبرى وذلك لنقل كميات كبيرة من البضائع و الاوزان،
+                        يعمل على نظام النقط الثابتة وذلك لزيادة حمولة الماكينة لرفع كميات كبيرة من البضاعة تصل الى 3000
+                        كجم، يصل عرض فتحات الابواب الى 160 سم</p>
+                    <div class="about-btn"><a href="#" class="custom-btn white-btn">اقرأ المزيد</a></div>
+                </div>
+                <div class="col-md-6 about-img"><img src="./assets/img/about/3.png" alt=".."></div>
+            </div>
+            <div class="row about-item">
+                <div class="col-md-6 about-body">
+                    <h4>مصاعد المستشفيات</h4>
+                    <h3>الراحة التامة عند الإستخدام</h3>
+                    <p>صممت مصاعد المستشفيات نظرا لظروف المرضى ، لتعطيهم راحة تامة عند استخدامها لعدم الاهتزازات والسرعة
+                        العالية فتقوم المصاعد على نظام النقط الثابتة، تتميز بكبر حجم الكبينة لأتاحة دخول السرير والكرسي
+                        المتحرك</p>
+                    <div class="about-btn"><a href="#" class="custom-btn white-btn">اقرأ المزيد</a></div>
+                </div>
+                <div class="col-md-6 about-img"><img src="./assets/img/about/4.png" alt=".."></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="clients">
+        <div class="containee">
+            <div class="clients-head">
+                <h5>عملاؤنا الكرام</h5>
+                <h2>تشرفنا بخدمة العديد من العملاء</h2>
+            </div>
+            <div class="row clients-body">
+                <div class="client"><a href="#"><img src="./assets/img/clients/6.png" alt=".."></a></div>
+                <div class="client"><a href="#"><img src="./assets/img/clients/5.png" alt=".."></a></div>
+                <div class="client"><a href="#"><img src="./assets/img/clients/4.png" alt=".."></a></div>
+                <div class="client"><a href="#"><img src="./assets/img/clients/3.png" alt=".."></a></div>
+                <div class="client"><a href="#"><img src="./assets/img/clients/2.png" alt=".."></a></div>
+                <div class="client"><a href="#"><img src="./assets/img/clients/1.png" alt=".."></a></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="containee">
+            <div class="projects-head">
+                <h2>مشروعات نفذت بكل إحترافية</h2>
+            </div>
+            <div class="projects-body">
+                <div class="row mx-auto">
+                    <div class="col-md-4">
+                        <div class="project">
+                            <a href="./assets/img/projects/1.png" data-fancybox="gallery">
+                                <img src="./assets/img/projects/1.png" alt="project" />
+                                <div class="project-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="./assets/img/projects/2.png" data-fancybox="gallery">
+                                <img src="./assets/img/projects/2.png" alt="project" />
+                                <div class="project-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="./assets/img/projects/3.png" data-fancybox="gallery">
+                                <img src="./assets/img/projects/3.png" alt="project" />
+                                <div class="project-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project">
+                            <a href="./assets/img/projects/4.png" data-fancybox="gallery">
+                                <img src="./assets/img/projects/4.png" alt="project" class="big-img" />
+                                <div class="project-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="./assets/img/projects/5.png" data-fancybox="gallery">
+                                <img src="./assets/img/projects/5.png" alt="project" class="big-img" />
+                                <div class="project-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="project">
+                            <a href="./assets/img/projects/6.png" data-fancybox="gallery">
+                                <img src="./assets/img/projects/6.png" alt="project" />
+                                <div class="project-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="./assets/img/projects/7.png" data-fancybox="gallery">
+                                <img src="./assets/img/projects/7.png" alt="project" />
+                                <div class="project-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="project">
+                            <a href="./assets/img/projects/8.png" data-fancybox="gallery">
+                                <img src="./assets/img/projects/8.png" alt="project" />
+                                <div class="project-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="containee">
+            <div class="row footer-content">
+                <div class="up custom-btn transparent-btn" onclick="window.scroll({top: 0,behavior: 'smooth'});">
+                    <i class="fas fa-angle-up"></i>
+                </div>
+                <div class="logo"><a href="#"><img src="./assets/img/footer-logo.png" alt="logo"></a></div>
+                <div class="social">
+                    <div class="social-item"><a href="#"><i class="fab fa-instagram"></i></a></div>
+                    <div class="social-item"><a href="#"><i class="fab fa-youtube"></i></a></div>
+                    <div class="social-item"><a href="#"><i class="fab fa-linkedin-in"></i></a></div>
+                    <div class="social-item"><a href="#"><i class="fab fa-twitter"></i></a></div>
+                    <div class="social-item"><a href="#"><i class="fab fa-facebook-f"></i></a></div>
+                </div>
+                <div class="credit">
+                    <p>جميع الحقوق محفوظة &copy; شركة المحرك الفضي للمصاعد 2020</p>
+                    <p>تصميم وتطوير <a href="https://tasawk.com.sa/"> <img src="./assets/img/icons/footer.png"
+                                alt="Tasawk"></a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="./assets/js/vendor/jquery.min.js"></script>
+    <script src="./assets/js/vendor/bootstrap.min.js"></script>
+    <script src="./assets/js/vendor/jquery.fancybox.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

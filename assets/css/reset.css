@@ -1,0 +1,228 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+body,
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  width: 100%;
+  background-color: white;
+  font-family: FrutigerRoman;
+  font-size: 17px;
+}
+
+@media (max-width: 1500px) {
+  body,
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 1200px) {
+  body,
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  body,
+  html {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 360px) {
+  body,
+  html {
+    font-size: 8px;
+  }
+}
+
+@font-face {
+  font-family: "FrutigerBlack";
+  src: url("../fonts/frutiger/FrutigerLTArabic-75Black.woff2") format("woff2"), url("../fonts/frutiger/FrutigerLTArabic-75Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FrutigerBold";
+  src: url("../fonts/frutiger/FrutigerLTArabic-65Bold.woff2") format("woff2"), url("../fonts/frutiger/FrutigerLTArabic-65Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FrutigerRoman";
+  src: url("../fonts/frutiger/FrutigerLTArabic-55Roman.woff2") format("woff2"), url("../fonts/frutiger/FrutigerLTArabic-55Roman.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "FrutigerLight";
+  src: url("../fonts/frutiger/FrutigerLTArabic-45Light.woff2") format("woff2"), url("../fonts/frutiger/FrutigerLTArabic-45Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+h1,
+h2,
+h3 {
+  font-family: FrutigerBlack;
+  font-size: 36px;
+  margin: 0;
+}
+
+@media (max-width: 1500px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 1200px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 576px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 360px) {
+  h1,
+  h2,
+  h3 {
+    font-size: 15px;
+  }
+}
+
+h4 {
+  font-family: FrutigerBold;
+  font-size: 20px;
+  margin: 0;
+}
+
+@media (max-width: 1500px) {
+  h4 {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1200px) {
+  h4 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  h4 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 360px) {
+  h4 {
+    font-size: 13px;
+  }
+}
+
+h5,
+p {
+  font-family: FrutigerLight;
+  font-size: 19px;
+  margin: 0;
+}
+
+@media (max-width: 1500px) {
+  h5,
+  p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1200px) {
+  h5,
+  p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  h5,
+  p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  h5,
+  p {
+    font-size: 10px;
+  }
+}
+
+a {
+  color: black;
+}
+
+a:hover {
+  color: #1a1a1a;
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+}
+
+.containee {
+  position: relative;
+  padding: 0;
+  margin: 0 auto;
+}
+
+@media (min-width: 1500px) {
+  .containee {
+    max-width: 1920px;
+  }
+}
+
+.row {
+  margin: 0;
+}
+
+.row > div {
+  padding: 0;
+}
+/*# sourceMappingURL=reset.css.map */
