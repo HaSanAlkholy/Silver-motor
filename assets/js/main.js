@@ -35,11 +35,11 @@ $(window).on('load', function () {
 
         if (window.innerWidth < 1200) {
             $('#nava .dropdown').addClass('slide').removeClass('dropdown');
-        }else{
+        } else {
             $('#nava .slide').addClass('dropdown').removeClass('slide');
         }
 
-        if (window.innerWidth < 576) {
+        if (window.innerWidth < 768) {
             //clients swiper initialize
             $('.mob-swiper-containe').addClass('swiper-container');
             $('.mob-swiper-wrap').removeClass('row');
@@ -54,19 +54,50 @@ $(window).on('load', function () {
                 slidesPerView: 3,
                 spaceBetween: 10,
                 autoplay: {
-                  delay: 5000,
+                    delay: 5000,
                 },
                 breakpoints: {
                     576: {
                         slidesPerView: 5,
-                      },
+                    },
                     150: {
-                      slidesPerView: 2,
+                        slidesPerView: 2,
                     }
-                  },
-              });
+                },
+            });
 
             //clients swiper initialize end
+
+            //projects swiper initialize
+            $('.mob-swiper-containe2').addClass('swiper-container2');
+            let projects = $('.project');
+            document.getElementById('projects-wrap').innerHTML = '';
+
+            for (let i = 0; i < projects.length; i++) {
+                projects[i].classList.add('swiper-slide');
+                document.getElementById('projects-wrap').appendChild(projects[i]);
+            }
+            window.mySwiper2 = new Swiper('.swiper-container2', {
+                // Optional parameters
+                direction: 'horizontal',
+                loop: true,
+                updateOnWindowResize: true,
+                slidesPerView: 3,
+                spaceBetween: 10,
+                autoplay: {
+                    delay: 5000,
+                },
+                breakpoints: {
+                    576: {
+                        slidesPerView: 3,
+                    },
+                    150: {
+                        slidesPerView: 2,
+                    }
+                },
+            });
+            
+            //projects swiper initialize end
 
         }
     }

@@ -1093,7 +1093,7 @@ section {
   align-items: center;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #clients .clients-body {
     justify-content: unset;
     align-items: unset;
@@ -1104,7 +1104,7 @@ section {
   margin: 0 35px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #clients .clients-body .client {
     margin: unset;
   }
@@ -1121,7 +1121,7 @@ section {
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   #clients .clients-body .client img {
     max-width: 100%;
   }
@@ -1182,6 +1182,18 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  #projects .projects-body .project {
+    height: 180px;
+  }
+}
+
+@media (max-width: 576px) {
+  #projects .projects-body .project {
+    height: 200px;
+  }
+}
+
 #projects .projects-body .project .project-overlay {
   position: absolute;
   height: 100%;
@@ -1215,6 +1227,7 @@ section {
 @media (max-width: 768px) {
   #projects .projects-body .project a img {
     max-height: auto;
+    height: 100%;
   }
 }
 
