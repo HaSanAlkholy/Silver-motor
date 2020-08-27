@@ -10,6 +10,10 @@
   outline: none !important;
 }
 
+.overflow {
+  overflow: hidden !important;
+}
+
 body,
 html {
   overflow-x: hidden;
@@ -44,7 +48,7 @@ html {
 @media (max-width: 360px) {
   body,
   html {
-    font-size: 8px;
+    font-size: 12px;
   }
 }
 
@@ -116,7 +120,7 @@ h3 {
   h1,
   h2,
   h3 {
-    font-size: 15px;
+    font-size: 19px;
   }
 }
 
@@ -146,7 +150,7 @@ h4 {
 
 @media (max-width: 360px) {
   h4 {
-    font-size: 13px;
+    font-size: 17px;
   }
 }
 
@@ -181,7 +185,7 @@ p {
 @media (max-width: 360px) {
   h5,
   p {
-    font-size: 10px;
+    font-size: 14px;
   }
 }
 
@@ -657,10 +661,10 @@ nav .nav-content .nava ul .dropdown .dropdown-content > div:last-child {
     font-size: 20px;
   }
   nav .nav-content .nava ul li {
-    margin: 7px 0;
+    margin: 9px 0;
   }
   nav .nav-content .nava ul li a {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -746,6 +750,12 @@ nav .nav-content .nava-active ul {
   left: 20px;
   transform: translate(-50%, -50%);
   cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .search-form .search .searching {
+    left: 10px;
+  }
 }
 
 .search-form-active {
@@ -884,6 +894,13 @@ section {
   }
 }
 
+@media (max-width: 768px) {
+  section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 #services {
   text-align: center;
   background-color: #f9f9f9;
@@ -892,6 +909,12 @@ section {
 
 #services .services-head {
   margin-bottom: 120px;
+}
+
+@media (max-width: 576px) {
+  #services .services-head {
+    margin-bottom: 50px;
+  }
 }
 
 #services .services-head h2 {
@@ -907,6 +930,14 @@ section {
 
 #services .services-body .service img {
   max-width: 100%;
+  margin-bottom: 55px;
+}
+
+@media (max-width: 576px) {
+  #services .services-body .service img {
+    width: 50%;
+    margin-bottom: 25px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -918,7 +949,8 @@ section {
 
 @media (max-width: 576px) {
   #services .services-body .service {
-    width: 90%;
+    width: 45%;
+    margin: 15px 0;
   }
 }
 
@@ -933,10 +965,6 @@ section {
     padding: 0 0;
     justify-content: space-around;
   }
-}
-
-#services .services-body img {
-  margin-bottom: 55px;
 }
 
 #about {
@@ -1449,6 +1477,13 @@ html[dir="ltr"] .search-form .search .searching {
   right: 20px;
 }
 
+@media (max-width: 576px) {
+  html[dir="ltr"] .search-form .search .searching {
+    right: 10px;
+    left: unset;
+  }
+}
+
 html[dir="ltr"] header .header-head {
   padding: 0 30px;
   padding-top: 50px;
@@ -1485,6 +1520,12 @@ html[dir="ltr"] #services .services-body {
   }
 }
 
+@media (max-width: 576px) {
+  html[dir="ltr"] #services .services-body {
+    padding: 0 10px;
+  }
+}
+
 @media (max-width: 1200px) {
   html[dir="ltr"] #services .services-body .service {
     width: 25%;
@@ -1503,7 +1544,7 @@ html[dir="ltr"] #services .services-body {
 
 @media (max-width: 576px) {
   html[dir="ltr"] #services .services-body .service {
-    width: 90%;
+    width: 49%;
   }
 }
 

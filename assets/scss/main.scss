@@ -263,10 +263,10 @@ nav {
                     }
 
                     li {
-                        margin: 7px 0;
+                        margin: 9px 0;
 
                         a {
-                            font-size: 18px;
+                            font-size: 16px;
                         }
                     }
                 }
@@ -348,6 +348,10 @@ nav {
             left: 20px;
             transform: translate(-50%, -50%);
             cursor: pointer;
+
+            @media(max-width:576px){
+                left:10px;
+            }
         }
     }
 }
@@ -469,6 +473,10 @@ section {
         padding-top: 50px;
         padding-bottom: 75px;
     }
+    @media (max-width: 768px) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
 }
 
 #services {
@@ -478,6 +486,10 @@ section {
 
     .services-head {
         margin-bottom: 120px;
+
+        @media (max-width: 576px) {
+            margin-bottom: 50px;
+        }
 
         h2 {
             margin-top: 17px;
@@ -490,10 +502,16 @@ section {
         flex-wrap: wrap;
         padding: 0 280px;
 
-        .service {
 
-            img{
+        .service {
+            img {
                 max-width: 100%;
+                margin-bottom:55px;
+
+                @media (max-width: 576px) {
+                    width: 50%;
+                    margin-bottom:25px;
+                }
             }
             @media (max-width: 768px) {
                 width: 45%;
@@ -501,10 +519,9 @@ section {
             }
 
             @media (max-width: 576px) {
-                width: 90%;
+                width: 45%;
+                margin: 15px 0;
             }
-
-            
         }
 
         @media (max-width: 1500px) {
@@ -513,10 +530,6 @@ section {
         @media (max-width: 1200px) {
             padding: 0 0;
             justify-content: space-around;
-        }
-
-        img {
-            margin-bottom: 55px;
         }
     }
 }
@@ -846,118 +859,119 @@ footer {
 html[dir="ltr"] {
     nav {
         .nav-content {
-          
             padding-left: 0;
-            padding-right:0;
+            padding-right: 0;
             @media (max-width: 1500px) {
                 padding-left: 0;
-                padding-right:0;
+                padding-right: 0;
             }
             @media (max-width: 1200px) {
                 padding-left: 0;
-                padding-right:0;
+                padding-right: 0;
             }
-    
+
             .info {
-              
                 margin-left: 55px;
-                margin-right:0;
+                margin-right: 0;
                 @media (max-width: 1500px) {
                     margin-left: 30px;
-                    margin-right:0;
+                    margin-right: 0;
                 }
-    
+
                 .mail,
                 .tel {
                     i {
                         margin-left: 10px;
-                        margin-right:0;
+                        margin-right: 0;
                     }
                 }
-    
+
                 .tel {
                     margin-left: 25px;
-                    margin-right:0;
+                    margin-right: 0;
                     @media (max-width: 1500px) {
                         margin-left: 15px;
-                        margin-right:0;
+                        margin-right: 0;
                     }
                 }
-    
+
                 .contact {
                     margin-left: 20px;
-                    margin-right:0;
+                    margin-right: 0;
                     @media (max-width: 1500px) {
                         margin-left: 10px;
-                        margin-right:0;
-
+                        margin-right: 0;
                     }
                 }
-    
+
                 .lang {
                     right: 75px;
-                    left:unset;
+                    left: unset;
                 }
             }
-    
+
             .nava-icon {
                 margin-right: 30px;
-                margin-left:0;
+                margin-left: 0;
             }
-    
+
             .nava {
                 margin-right: 60px;
-                margin-left:0;
+                margin-left: 0;
 
                 @media (max-width: 1500px) {
                     margin-right: 45px;
-                    margin-left:0;
+                    margin-left: 0;
                 }
                 @media (max-width: 1200px) {
                     margin: 0;
                     right: 0;
                 }
-                ul {    
+                ul {
                     .nava-head,
-                    .nava-info {    
+                    .nava-info {
                         i {
                             margin-left: 10px;
-                            margin-right:0;
+                            margin-right: 0;
                         }
                     }
-    
+
                     .dropdown {
                         & > a {
                             i {
                                 margin-left: 5px;
-                                margin-right:0;
+                                margin-right: 0;
                             }
                         }
                     }
-    
+
                     @media (max-width: 1200px) {
                         left: -150%;
-                        right:unset;
+                        right: unset;
                         text-align: left;
                     }
                 }
             }
 
             .nava-active {
-    
                 ul {
                     left: 0;
-                    right:unset;
+                    right: unset;
                 }
             }
         }
     }
 
-    .search-form{
-        .search{
-            .searching{
+    .search-form {
+        .search {
+            .searching {
                 left: unset;
-                right:20px;
+                right: 20px;
+
+                @media(max-width:576px){
+                    right:10px;
+                    left: unset;
+                }
             }
         }
     }
@@ -982,38 +996,39 @@ html[dir="ltr"] {
         }
     }
 
-    #services{
-
-        .services-body{
+    #services {
+        .services-body {
             padding: 0 150px;
             @media (max-width: 1500px) {
                 padding: 0 50px;
             }
+            @media (max-width: 576px) {
+                padding: 0 10px;
+            }
 
-            .service{
-                @media(max-width:1200px){
-                    width:25%;
+            .service {
+                @media (max-width: 1200px) {
+                    width: 25%;
 
-                    img{
-                        max-width:100%;
+                    img {
+                        max-width: 100%;
                     }
                 }
 
-                @media(max-width:992px){
+                @media (max-width: 992px) {
                     width: 45%;
                     margin: 25px 0;
                 }
 
-                @media(max-width:576px){
-                    width: 90%;
+                @media (max-width: 576px) {
+                    width: 49%;
                 }
             }
-
         }
     }
 
-    #about{
-        text-align:left;
+    #about {
+        text-align: left;
 
         .about-img {
             img {
@@ -1051,43 +1066,39 @@ html[dir="ltr"] {
             }
             @media (max-width: 576px) {
                 padding: 50px 10px;
-            }}
-
+            }
+        }
     }
 
     footer {
-    
         .footer-content {
             padding-left: 250px;
-            padding-right:0;
-    
+            padding-right: 0;
+
             @media (max-width: 1650px) {
                 padding-left: 150px;
-                padding-right:0;
-
+                padding-right: 0;
             }
-    
+
             @media (max-width: 1500px) {
                 padding-left: 80px;
-                padding-right:0;
-
+                padding-right: 0;
             }
             @media (max-width: 1200px) {
                 padding-left: 25px;
-                padding-right:0;
-
+                padding-right: 0;
             }
-    
+
             @media (max-width: 992px) {
                 padding-left: 0;
-                padding-right:0;
+                padding-right: 0;
                 flex-direction: column;
             }
         }
-    
+
         .up {
             margin-right: 85px;
-            margin-left:0;
+            margin-left: 0;
 
             @media (max-width: 992px) {
                 position: absolute;
@@ -1106,50 +1117,47 @@ html[dir="ltr"] {
                 right: unset;
             }
         }
-    
+
         .social {
             margin-left: 200px;
-            margin-right:0;
-    
+            margin-right: 0;
+
             @media (max-width: 1650px) {
                 margin-left: 150px;
-                margin-right:0;
-
+                margin-right: 0;
             }
-    
+
             @media (max-width: 1500px) {
                 margin-left: 80px;
-                margin-right:0;
-
+                margin-right: 0;
             }
             @media (max-width: 1200px) {
                 margin-left: 25px;
-                margin-right:0;
-
+                margin-right: 0;
             }
             .social-item {
                 margin-right: 35px;
-                margin-left:0;
-    
+                margin-left: 0;
+
                 @media (max-width: 1500px) {
                     margin-right: 25px;
                 }
             }
         }
-    
+
         .credit {
             text-align: left;
             margin-left: 10px;
             padding-left: 50px;
             margin-right: 0;
-            padding-right:0;
+            padding-right: 0;
             border-left: 1px solid #262626;
             border-right: none;
-    
+
             @media (max-width: 1500px) {
                 padding-left: 25px;
                 margin-right: 0;
-                padding-right:0;
+                padding-right: 0;
             }
             @media (max-width: 992px) {
                 text-align: center;
@@ -1159,7 +1167,7 @@ html[dir="ltr"] {
                 margin-left: 0;
                 border-top: 1px solid #262626;
                 margin-right: 0;
-                padding-right:0;
+                padding-right: 0;
             }
         }
     }

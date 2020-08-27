@@ -6,18 +6,25 @@ $(window).on('load', function () {
     //toogle navbar
     $('#nava-icon').click(function (e) {
         $('#nava').toggleClass('nava-active');
+        $('html').toggleClass('overflow');
     });
 
     $('#nava').click(function (e) {
         if (e.target.id == 'nava') {
             $(this).removeClass('nava-active');
+            $('html').removeClass('overflow');
         }
+    });
+
+    $('#search-btn').click(function (e) {
+        $('#search-form').toggleClass('search-form-active');
+        $('html').toggleClass('overflow');
     });
 
     $('#search-form').click(function (e) {
         if (e.target.id == 'search-form') {
-            console.log('here');
             $(this).removeClass('search-form-active');
+            $('html').removeClass('overflow');
         }
     });
 
