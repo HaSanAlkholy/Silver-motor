@@ -512,7 +512,7 @@ section {
                 margin-bottom:55px;
 
                 @media (max-width: 576px) {
-                    width: 50%;
+                    max-width: 50%;
                     margin-bottom:25px;
                 }
             }

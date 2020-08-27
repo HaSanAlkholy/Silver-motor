@@ -24,7 +24,7 @@
                             <div class="nava-lang">
                                 <a href="./index.html"> العربية <img src="./assets/img/icons/ar.png" alt="en"> </a>
                             </div>
-                            <div class="close ml-auto" onclick="$('#nava').removeClass('nava-active');">
+                            <div class="close ml-auto" onclick="$('#nava').removeClass('nava-active');$('html').toggleClass('overflow');">
                                 <i class="fas fa-times"></i>
                             </div>
                         </div>
@@ -76,7 +76,7 @@
     </nav>
 
     <div class="search-form" id="search-form">
-        <div class="close-search" onclick="$('#search-form').removeClass('search-form-active');"><i
+        <div class="close-search" onclick="$('#search-form').removeClass('search-form-active');$('html').toggleClass('overflow');"><i
                 class="fas fa-times"></i></div>
         <div class="search">
             <input type="text" id="search-input" placeholder="What are you looking for?" autocomplete="false">

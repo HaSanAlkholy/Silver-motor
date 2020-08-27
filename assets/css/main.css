@@ -941,7 +941,7 @@ section {
 
 @media (max-width: 576px) {
   #services .services-body .service img {
-    width: 50%;
+    max-width: 50%;
     margin-bottom: 25px;
   }
 }
