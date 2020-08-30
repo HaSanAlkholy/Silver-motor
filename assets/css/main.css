@@ -943,15 +943,8 @@ section {
 
 @media (max-width: 768px) {
   #services .services-body .service {
-    width: 45%;
+    width: 43%;
     margin: 25px 0;
-  }
-}
-
-@media (max-width: 576px) {
-  #services .services-body .service {
-    width: 40%;
-    margin: 15px 0;
   }
 }
 
