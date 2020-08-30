@@ -45,10 +45,9 @@ $(window).on('load', function () {
             $('.mob-swiper-wrap').removeClass('row');
             $('.mob-swiper-wrap').addClass('swiper-wrapper');
             $('.client').addClass('swiper-slide');
-            let pag = document.createElement('div');
-            pag.classList.add('swiper-pagination');
-            console.log(pag);
-            document.getElementById('clients-slider').appendChild(pag);
+            let pag1 = document.createElement('div');
+            pag1.classList.add('swiper-pagination');
+            document.getElementById('clients-slider').appendChild(pag1);
             window.mySwiper = new Swiper('.swiper-container', {
                 // Optional parameters
                 direction: 'horizontal',
@@ -61,9 +60,7 @@ $(window).on('load', function () {
                     el: '.swiper-pagination',
                     clickable: true,
                 },
-                autoplay: {
-                    delay: 5000,
-                },
+                autoplay:false,
                 breakpoints: {
                     576: {
                         slidesPerView: 5,
@@ -85,7 +82,9 @@ $(window).on('load', function () {
                 projects[i].classList.add('swiper-slide');
                 document.getElementById('projects-wrap').appendChild(projects[i]);
             }
-            document.getElementById('projects-slider').appendChild(pag);
+            let pag2 = document.createElement('div');
+            pag2.classList.add('swiper-pagination');
+            document.getElementById('projects-slider').appendChild(pag2);
             window.mySwiper2 = new Swiper('.swiper-container2', {
                 // Optional parameters
                 direction: 'horizontal',
@@ -98,9 +97,7 @@ $(window).on('load', function () {
                     el: '.swiper-pagination',
                     clickable: true,
                 },
-                autoplay: {
-                    delay: 5000,
-                },
+                autoplay: false,
                 breakpoints: {
                     576: {
                         slidesPerView: 3,
