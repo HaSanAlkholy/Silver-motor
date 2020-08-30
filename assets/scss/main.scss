@@ -24,6 +24,7 @@
             border-radius:100%;
             background-color:black;
             margin:0 10px;
+            opacity: 0;
             animation: loader 2s ease-in-out  infinite alternate both;
 
             @media(max-width:576px){
@@ -45,13 +46,13 @@
 
 @keyframes loader{
     0%{
-        opacity: 1;
-    }
-    50%{
         opacity: 0;
     }
+    50%{
+        opacity: 1;
+    }
     100%{
-        opacity: 0.5;
+        opacity: 0;
     }
 }
 
