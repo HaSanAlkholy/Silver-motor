@@ -1090,6 +1090,14 @@ section {
   transform: scale(1.05);
 }
 
+#clients .swiper-container .swiper-pagination {
+  margin-bottom: -20px;
+}
+
+#clients .swiper-container .swiper-pagination-bullet-active {
+  background-color: black;
+}
+
 #clients .clients-head {
   margin-bottom: 70px;
 }
@@ -1252,6 +1260,14 @@ section {
   #projects .projects-body .project a .big-img {
     max-height: auto;
   }
+}
+
+#projects .swiper-pagination {
+  margin-bottom: -20px;
+}
+
+#projects .swiper-pagination-bullet-active {
+  background-color: black;
 }
 
 footer {

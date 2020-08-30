@@ -45,14 +45,22 @@ $(window).on('load', function () {
             $('.mob-swiper-wrap').removeClass('row');
             $('.mob-swiper-wrap').addClass('swiper-wrapper');
             $('.client').addClass('swiper-slide');
-
+            let pag = document.createElement('div');
+            pag.classList.add('swiper-pagination');
+            console.log(pag);
+            document.getElementById('clients-slider').appendChild(pag);
             window.mySwiper = new Swiper('.swiper-container', {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
                 updateOnWindowResize: true,
                 slidesPerView: 3,
+                speed: 400,
                 spaceBetween: 10,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
                 autoplay: {
                     delay: 5000,
                 },
@@ -77,14 +85,19 @@ $(window).on('load', function () {
                 projects[i].classList.add('swiper-slide');
                 document.getElementById('projects-wrap').appendChild(projects[i]);
             }
+            document.getElementById('projects-slider').appendChild(pag);
             window.mySwiper2 = new Swiper('.swiper-container2', {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
                 updateOnWindowResize: true,
                 slidesPerView: 3,
+                speed: 400,
                 spaceBetween: 10,
-                invert: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
                 autoplay: {
                     delay: 5000,
                 },
@@ -97,7 +110,7 @@ $(window).on('load', function () {
                     }
                 },
             });
-            
+
             //projects swiper initialize end
 
         }

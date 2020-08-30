@@ -689,6 +689,13 @@ section {
                 }
             }
         }
+
+        .swiper-pagination{
+            margin-bottom:-20px;
+        }
+        .swiper-pagination-bullet-active{
+            background-color:black;
+        }
     }
 
     .clients-head {
@@ -830,6 +837,13 @@ section {
                 }
             }
         }
+    }
+
+    .swiper-pagination{
+        margin-bottom:-20px;
+    }
+    .swiper-pagination-bullet-active{
+        background-color:black;
     }
 }
 
