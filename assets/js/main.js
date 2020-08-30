@@ -1,4 +1,11 @@
 $(window).on('load', function () {
+    
+    //preloader
+    $('.pre-loader').fadeOut("500", function () {
+        $('html').removeClass("overflow");
+        $(this).remove();
+    });
+    
     // projects fancybox
 
     $('[data-fancybox="gallery"]').fancybox({});
