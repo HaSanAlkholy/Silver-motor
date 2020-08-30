@@ -52,7 +52,6 @@ $(window).on('load', function () {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
-                updateOnWindowResize: true,
                 slidesPerView: 3,
                 speed: 400,
                 spaceBetween: 10,
@@ -89,7 +88,6 @@ $(window).on('load', function () {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
-                updateOnWindowResize: true,
                 slidesPerView: 3,
                 speed: 400,
                 spaceBetween: 10,
