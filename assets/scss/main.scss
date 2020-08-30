@@ -25,6 +25,11 @@
             background-color:black;
             margin:0 10px;
             animation: loader 2s ease-in-out  infinite alternate both;
+
+            @media(max-width:576px){
+                height:25px;
+                width:25px;
+            }
         }
         .dot:nth-child(1){
             animation-delay: 0s;

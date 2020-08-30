@@ -325,6 +325,13 @@ ul {
   animation: loader 2s ease-in-out  infinite alternate both;
 }
 
+@media (max-width: 576px) {
+  .pre-loader .content .dot {
+    height: 25px;
+    width: 25px;
+  }
+}
+
 .pre-loader .content .dot:nth-child(1) {
   animation-delay: 0s;
 }
