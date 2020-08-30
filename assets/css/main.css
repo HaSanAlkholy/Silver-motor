@@ -631,7 +631,7 @@ nav .nav-content .nava ul .dropdown .dropdown-content > div:last-child {
 nav .nav-content .nava-active {
   opacity: 1;
   z-index: 50;
-  height: 100%;
+  height: 100vh;
   overflow-y: scroll;
 }
 
