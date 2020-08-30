@@ -1,11 +1,11 @@
 $(window).on('load', function () {
-    
+
     //preloader
     $('.pre-loader').fadeOut("500", function () {
         $('html').removeClass("overflow");
         $(this).remove();
     });
-    
+
     // projects fancybox
 
     $('[data-fancybox="gallery"]').fancybox({});
@@ -47,7 +47,7 @@ $(window).on('load', function () {
         }
 
         if ($(!'.swiper-container').length) {
-          addSwiper();
+            addSwiper();
         }
     }
     resized();
@@ -130,6 +130,26 @@ $(window).on('load', function () {
         }
     }
     addSwiper();
+
+    window.mySwiper = new Swiper('#header-slider', {
+        // Optional parameters
+        direction: 'horizontal',
+        effect: 'fade',
+        loop: true,
+        slidesPerView: 1,
+        speed: 1500,
+        spaceBetween: 0,
+        mousewheel:false,
+        simulateTouch: false,
+        updateOnWindowResize: true,
+        pagination: {
+            el: '.header-img .swiper-pagination',
+            clickable: true,
+        },
+        autoplay: {
+            delay:3500,
+        },
+    });
 
 
     $(".slide").on("click", function () {
