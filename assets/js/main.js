@@ -39,7 +39,7 @@ $(window).on('load', function () {
             $('#nava .slide').addClass('dropdown').removeClass('slide');
         }
 
-        if (window.innerWidth < 768) {
+        if (window.innerWidth < 769) {
             //clients swiper initialize
             $('.mob-swiper-containe').addClass('swiper-container');
             $('.mob-swiper-wrap').removeClass('row');
@@ -84,6 +84,7 @@ $(window).on('load', function () {
                 updateOnWindowResize: true,
                 slidesPerView: 3,
                 spaceBetween: 10,
+                invert: true,
                 autoplay: {
                     delay: 5000,
                 },
