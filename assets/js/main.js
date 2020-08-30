@@ -39,6 +39,13 @@ $(window).on('load', function () {
             $('#nava .slide').addClass('dropdown').removeClass('slide');
         }
 
+        if ($(!'.swiper-container').length) {
+          addSwiper();
+        }
+    }
+    resized();
+
+    function addSwiper() {
         if (window.innerWidth < 769) {
             //clients swiper initialize
             $('.mob-swiper-containe').addClass('swiper-container');
@@ -52,7 +59,6 @@ $(window).on('load', function () {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
-                updateOnWindowResize: true,
                 slidesPerView: 3,
                 speed: 400,
                 spaceBetween: 10,
@@ -79,7 +85,7 @@ $(window).on('load', function () {
             $('.mob-swiper-containe2').addClass('swiper-container');
             let projects = $('.project');
             document.getElementById('projects-wrap').innerHTML = '';
-            
+
             for (let i = 0; i < projects.length; i++) {
                 projects[i].classList.add('swiper-slide');
                 document.getElementById('projects-wrap').appendChild(projects[i]);
@@ -91,7 +97,6 @@ $(window).on('load', function () {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
-                updateOnWindowResize: true,
                 slidesPerView: 3,
                 speed: 400,
                 autoplay: {
@@ -114,12 +119,10 @@ $(window).on('load', function () {
                     }
                 },
             });
-
             //projects swiper initialize end
-
         }
     }
-    resized();
+    addSwiper();
 
 
     $(".slide").on("click", function () {
