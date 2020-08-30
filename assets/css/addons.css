@@ -89,13 +89,31 @@
   cursor: pointer;
 }
 
-.slide i {
-  margin: 0 10px;
+.slide a {
+  display: flex;
+}
+
+.slide a i {
+  margin-right: auto;
 }
 
 .slide .dropdown-content {
   display: none;
   margin-right: 15px;
+}
+
+html[dir="ltr"] .slide {
+  cursor: pointer;
+}
+
+html[dir="ltr"] .slide i {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+html[dir="ltr"] .slide .dropdown-content {
+  margin-left: 15px;
+  margin-right: 0;
 }
 
 ::-webkit-scrollbar-track {
