@@ -400,14 +400,14 @@ header {
     .header-head {
         flex-direction: column;
         text-align: center;
-        background-image: url("../img/header/head.png");
+        background-image: url("../img/header/head.jpg");
         background-repeat: no-repeat;
         background-position: center;
         padding-top: 30px;
 
         @media (max-width: 991px) {
             background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header/head.png"),
-                url("../img/header/header.png");
+                url("../img/header/header.jpg");
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover, auto;
@@ -486,7 +486,7 @@ header {
     }
 
     .header-img {
-        background-image: url("../img/header/header.png");
+        background-image: url("../img/header/header.jpg");
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -691,7 +691,7 @@ section {
         }
 
         .swiper-pagination{
-            margin-bottom:-10px;
+            position: relative;
         }
         .swiper-pagination-bullet-active{
             background-color:black;
@@ -700,6 +700,11 @@ section {
 
     .clients-head {
         margin-bottom: 70px;
+
+        @media(max-width:576px){
+            margin: 0 10px;
+            margin-bottom:50px;
+        }
 
         h2 {
             margin-top: 20px;
@@ -747,6 +752,10 @@ section {
     text-align: center;
 
     .projects-head {
+
+        @media(max-width:576px){
+            margin: 0 10px;
+        }
         h2 {
             margin-bottom: 55px;
         }
@@ -840,7 +849,7 @@ section {
     }
 
     .swiper-pagination{
-        margin-bottom:-20px;
+       position: relative;
     }
     .swiper-pagination-bullet-active{
         background-color:black;

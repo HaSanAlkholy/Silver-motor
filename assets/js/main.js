@@ -52,6 +52,7 @@ $(window).on('load', function () {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
+                updateOnWindowResize: true,
                 slidesPerView: 3,
                 speed: 400,
                 spaceBetween: 10,
@@ -59,7 +60,9 @@ $(window).on('load', function () {
                     el: '.swiper-pagination',
                     clickable: true,
                 },
-                autoplay:false,
+                autoplay: {
+                    delay: 5000,
+                },
                 breakpoints: {
                     576: {
                         slidesPerView: 5,
@@ -73,10 +76,10 @@ $(window).on('load', function () {
             //clients swiper initialize end
 
             //projects swiper initialize
-            $('.mob-swiper-containe2').addClass('swiper-container2');
+            $('.mob-swiper-containe2').addClass('swiper-container');
             let projects = $('.project');
             document.getElementById('projects-wrap').innerHTML = '';
-
+            
             for (let i = 0; i < projects.length; i++) {
                 projects[i].classList.add('swiper-slide');
                 document.getElementById('projects-wrap').appendChild(projects[i]);
@@ -84,18 +87,24 @@ $(window).on('load', function () {
             let pag2 = document.createElement('div');
             pag2.classList.add('swiper-pagination');
             document.getElementById('projects-slider').appendChild(pag2);
-            window.mySwiper2 = new Swiper('.swiper-container2', {
+            window.mySwiper2 = new Swiper('.swiper-container', {
                 // Optional parameters
                 direction: 'horizontal',
                 loop: true,
+                updateOnWindowResize: true,
                 slidesPerView: 3,
                 speed: 400,
+                autoplay: {
+                    delay: 5000,
+                },
                 spaceBetween: 10,
                 pagination: {
                     el: '.swiper-pagination',
                     clickable: true,
                 },
-                autoplay: false,
+                autoplay: {
+                    delay: 5000,
+                },
                 breakpoints: {
                     576: {
                         slidesPerView: 3,

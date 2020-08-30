@@ -16,7 +16,6 @@
 
 body,
 html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
   width: 100%;
   background-color: white;
@@ -749,7 +748,7 @@ header .containee > .row {
 header .header-head {
   flex-direction: column;
   text-align: center;
-  background-image: url("../img/header/head.png");
+  background-image: url("../img/header/head.jpg");
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 30px;
@@ -757,7 +756,7 @@ header .header-head {
 
 @media (max-width: 991px) {
   header .header-head {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header/head.png"), url("../img/header/header.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/header/head.png"), url("../img/header/header.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover, auto;
@@ -843,7 +842,7 @@ header .header-head .head .header-btn a {
 }
 
 header .header-img {
-  background-image: url("../img/header/header.png");
+  background-image: url("../img/header/header.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1091,7 +1090,7 @@ section {
 }
 
 #clients .swiper-container .swiper-pagination {
-  margin-bottom: -10px;
+  position: relative;
 }
 
 #clients .swiper-container .swiper-pagination-bullet-active {
@@ -1100,6 +1099,13 @@ section {
 
 #clients .clients-head {
   margin-bottom: 70px;
+}
+
+@media (max-width: 576px) {
+  #clients .clients-head {
+    margin: 0 10px;
+    margin-bottom: 50px;
+  }
 }
 
 #clients .clients-head h2 {
@@ -1154,6 +1160,12 @@ section {
 
 #projects {
   text-align: center;
+}
+
+@media (max-width: 576px) {
+  #projects .projects-head {
+    margin: 0 10px;
+  }
 }
 
 #projects .projects-head h2 {
@@ -1263,7 +1275,7 @@ section {
 }
 
 #projects .swiper-pagination {
-  margin-bottom: -20px;
+  position: relative;
 }
 
 #projects .swiper-pagination-bullet-active {
