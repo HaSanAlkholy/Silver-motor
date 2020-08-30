@@ -1115,14 +1115,8 @@ section {
 
 @media (max-width: 768px) {
   #about .about-item .about-body {
-    padding: 20px 25px;
+    padding: 10px;
     text-align: center;
-  }
-}
-
-@media (max-width: 576px) {
-  #about .about-item .about-body {
-    padding: 20px 10px;
   }
 }
 
@@ -1761,14 +1755,8 @@ html[dir="ltr"] #about .about-body {
 
 @media (max-width: 768px) {
   html[dir="ltr"] #about .about-body {
-    padding: 25px 25px;
+    padding: 10px;
     text-align: center;
-  }
-}
-
-@media (max-width: 576px) {
-  html[dir="ltr"] #about .about-body {
-    padding: 25px 10px;
   }
 }
 
