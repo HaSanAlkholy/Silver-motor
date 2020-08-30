@@ -63,7 +63,7 @@ $(window).on('load', function () {
                 speed: 400,
                 spaceBetween: 10,
                 pagination: {
-                    el: '.swiper-pagination',
+                    el: '#clients-slider .swiper-pagination',
                     clickable: true,
                 },
                 autoplay: {
@@ -104,7 +104,7 @@ $(window).on('load', function () {
                 },
                 spaceBetween: 10,
                 pagination: {
-                    el: '.swiper-pagination',
+                    el: '#projects-slider .swiper-pagination',
                     clickable: true,
                 },
                 autoplay: {
