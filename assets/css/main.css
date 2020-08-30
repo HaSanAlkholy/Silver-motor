@@ -709,7 +709,7 @@ nav .nav-content .nava-active {
   opacity: 1;
   z-index: 50;
   height: 100vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 nav .nav-content .nava-active ul {
@@ -826,7 +826,7 @@ header .containee > .row {
 header .header-head {
   flex-direction: column;
   text-align: center;
-  background-image: url("../img/header/head.jpg");
+  background-image: url("../img/header/head.png");
   background-repeat: no-repeat;
   background-position: center;
   padding-top: 30px;
